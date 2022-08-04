@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "Allkeyshop REST API"
+version = "0.1.0"
+description = "It allows to retrieve information from Allkeyshop."
+authors = ["n0nuser <gonzrubio.pablo@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.79.0"
+uvicorn = "^0.18.2"
+bs4 = "^0.0.1"
+python-dotenv = "^0.20.0"
+pandas = "^1.4.3"
+selenium = "^4.3.0"
+httpx = "^0.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^5.0.2"
+black = {version = "^22.6.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
