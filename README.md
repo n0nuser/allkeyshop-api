@@ -1,8 +1,6 @@
 <div id="top"></div>
 
-# REST API Collection
-
-Python REST API collection for popular webpages
+# Allkeyshop REST API
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
