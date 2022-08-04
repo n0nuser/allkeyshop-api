@@ -8,12 +8,23 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from starlette.responses import RedirectResponse
 import docs
+import os
 import httpx
 import utils
 import uvicorn
 
 CONFIG = dict(dotenv_values(".env") or dotenv_values(".env.example"))
-
+if not CONFIG:
+    CONFIG = {
+        "backlog": os.getenv("backlog", 2048),
+        "debug": os.getenv("debug", False),
+        "host": os.getenv("host", "0.0.0.0"),
+        "log_level": os.getenv("log_level", "trace"),
+        "port": os.getenv("port", 8080),
+        "reload": os.getenv("reload", True),
+        "timeout_keep_alive": os.getenv("timeout_keep_alive", 5),
+        "workers": os.getenv("workers", 4)
+    }
 SAVE = False
 CONFIG = utils.check_config(CONFIG)
 api = FastAPI()
