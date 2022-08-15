@@ -14,7 +14,7 @@ h11==0.12.0; python_version >= "3.7" and python_version < "4.0" and python_full_
 httpcore==0.15.0; python_version >= "3.7"
 httpx==0.23.0; python_version >= "3.7"
 idna==3.3; python_version >= "3.7" and python_version < "4.0" and (python_version >= "3.7" and python_full_version < "3.0.0" and python_version < "4.0" or python_full_version >= "3.6.0" and python_version < "4" and python_version >= "3.7") and python_full_version >= "3.6.2"
-numpy==1.23.1
+numpy==1.23.2
 outcome==1.2.0; python_version >= "3.7" and python_version < "4.0"
 pandas==1.4.3; python_version >= "3.8"
 pycparser==2.21; python_version >= "3.7" and python_full_version < "3.0.0" and os_name == "nt" and implementation_name != "pypy" and python_version < "4.0" or os_name == "nt" and implementation_name != "pypy" and python_version >= "3.7" and python_version < "4.0" and python_full_version >= "3.4.0"
