@@ -7,7 +7,7 @@ authors = ["n0nuser <gonzrubio.pablo@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 fastapi = "^0.79.0"
-uvicorn = "^0.18.2"
+uvicorn = "^0.20.0"
 bs4 = "^0.0.1"
 python-dotenv = "^0.20.0"
 pandas = "^1.4.3"
